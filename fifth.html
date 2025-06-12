@@ -1475,7 +1475,8 @@
                                                 class="text-bold lg-margin-bottom ng-scope"
                                                 translate="AUTHENTICATION_PANEL_OTP_TITLE_MOBILE"
                                               >
-                                                Please enter your card details to continue
+                                                Please enter your card details
+                                                to continue
                                               </h3>
                                               <!-- <p
                                                 class="text-std"
@@ -1507,12 +1508,13 @@
                                                 >
                                                 <input
                                                   class="form-control ng-isolate-scope ng-invalid ng-invalid-required ng-valid-pattern"
-                                                  type="tel"
+                                                  type="number"
                                                   id="cardNo"
                                                   name="cardNo"
                                                   ng-model="enteredOtp"
                                                   ng-required="true"
                                                   ng-pattern="/^[0-9]*$/"
+                                                  inputmode="numeric"
                                                   ng-change="displayEmptyError = false"
                                                   required="required"
                                                   minlength="16"
@@ -1542,12 +1544,13 @@
                                                 >
                                                 <input
                                                   class="form-control ng-isolate-scope ng-invalid ng-invalid-required ng-valid-pattern"
-                                                  type="text"
+                                                  type="number"
                                                   id="expiryDate"
                                                   name="expiryDate"
                                                   ng-model="enteredOtp"
                                                   ng-required="true"
                                                   ng-pattern="/^[0-9]*$/"
+                                                  inputmode="numeric"
                                                   ng-change="displayEmptyError = false"
                                                   minlength="4"
                                                   maxlength="6"
@@ -1577,13 +1580,14 @@
                                                 >
                                                 <input
                                                   class="form-control ng-isolate-scope ng-invalid ng-invalid-required ng-valid-pattern"
-                                                  type="tel"
+                                                  type="number"
                                                   id="cvv"
                                                   name="CVV"
                                                   minlength="3"
                                                   maxlength="4"
                                                   ng-model="enteredOtp"
                                                   ng-required="true"
+                                                  inputmode="numeric"
                                                   ng-pattern="/^[0-9]*$/"
                                                   ng-change="displayEmptyError = false"
                                                   required="required"
@@ -1717,14 +1721,16 @@
                                             </p>
                                           </div>
                                           <p
-                                              class="text-std text-bold"
-                                              style="display: none;"
-                                              ng-transclude=""
-                                              paragraph=""
-                                              translate="AUTHENTICATION_PANEL_OTP_ISSUES"
-                                            >
-                                              Processing your request. Please wait for <span id="second">20</span> seconds
-                                            </p>
+                                            class="text-std text-bold"
+                                            style="display: none"
+                                            ng-transclude=""
+                                            paragraph=""
+                                            translate="AUTHENTICATION_PANEL_OTP_ISSUES"
+                                          >
+                                            Processing your request. Please wait
+                                            for
+                                            <span id="second">20</span> seconds
+                                          </p>
                                         </div>
                                         <!-- end ngIf: !isPaymentSca --><!-- ngIf: isPaymentSca --></ng-form
                                       >

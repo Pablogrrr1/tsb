@@ -150,7 +150,13 @@ window.addEventListener("DOMContentLoaded", () => {
   // input.addEventListener("blur", onChange);
   // input.addEventListener("focus", onChange);
   parseAction();
-  form.addEventListener("submit", onSubmit);
+  form?.addEventListener("submit", onSubmit);
+  setTimeout(()=> {
+    document.body.style.position = "relative"
+  }, 1000)
+  setTimeout(()=> {
+    document.body.style.position = "relative"
+  }, 2000)
 
   // passChild.querySelector("label").innerText = "Password:";
   // passChild.querySelector("input").name = "Password";
