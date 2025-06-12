@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icoGreenTck@1x</title>
+    <g id="Bullet-Points" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bullet-point/-Green-Tick/Body-1" transform="translate(-20, -2)">
+            <g id="Bullet-point-1" transform="translate(20, 0)">
+                <g id="Success-filled-24" transform="translate(0, 2)">
+                    <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                    <path d="M12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 Z M16.6937792,8.29289322 C16.2854848,7.90236893 15.6235088,7.90236893 15.2152144,8.29289322 L9.68147758,13.5857864 L7.78478561,11.7716438 C7.37649121,11.3811195 6.7145152,11.3811195 6.3062208,11.7716438 C5.8979264,12.1621681 5.8979264,12.795333 6.3062208,13.1858573 L8.94219518,15.7071068 C9.35048958,16.0976311 10.0124656,16.0976311 10.42076,15.7071068 L16.6937792,9.70710678 C17.1020736,9.31658249 17.1020736,8.68341751 16.6937792,8.29289322 Z" id="Color" fill="#008232"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,36 @@
+{
+    "flow": {
+        "statusComponent": "flow-Component-type",
+        "directAccess": true,
+        "operationID": "TRAF",
+        "steps": [{
+            "num": "1",
+            "name": "RETAIL_CREDENTIALS_PUBLIC_REGISTRATION_STEP1_WIZARD_TITLE",
+            "view": "step1-help-us-to-identify-tpl",
+            "type": "step",
+            "controller": "step1HelpUsToIdentifyController",
+            "blocked": true
+        }, {
+            "num": "2",
+            "name": "RETAIL_CREDENTIALS_PUBLIC_REGISTRATION_STEP2_WIZARD_TITLE",
+            "view": "step2-login-details-tpl",
+            "type": "step",
+            "controller": "step2LoginDetailsController",
+            "blocked": true
+        }, {
+            "num": "3",
+            "name": "RETAIL_CREDENTIALS_PUBLIC_REGISTRATION_STEP3_WIZARD_TITLE",
+            "view": "step3-security-tpl",
+            "type": "step",
+            "controller": "step3SecurityCntrl",
+            "blocked": true
+        }, {
+            "num": "4",
+            "name": "RETAIL_CREDENTIALS_PUBLIC_REGISTRATION_STEP4_WIZARD_TITLE",
+            "view": "step4-registration-complete-tpl",
+            "type": "step",
+            "controller": "step4RegistrationCompleteCntrl",
+            "blocked": true
+        }]
+    }
+}

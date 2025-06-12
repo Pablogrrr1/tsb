@@ -1,0 +1,2007 @@
+<html lang="en_gb" dir="ltr">
+  <head>
+    <style type="text/css">
+      [uib-typeahead-popup].dropdown-menu {
+        display: block;
+      }
+    </style>
+    <style type="text/css">
+      .uib-time input {
+        width: 50px;
+      }
+    </style>
+    <style type="text/css">
+      [uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,
+      [uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,
+      [uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,
+      [uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,
+      [uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,
+      [uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,
+      [uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,
+      [uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,
+      [uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,
+      [uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,
+      [uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,
+      [uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,
+      [uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,
+      [uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,
+      [uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,
+      [uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,
+      [uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,
+      [uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,
+      [uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,
+      [uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,
+      [uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,
+      [uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,
+      [uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,
+      [uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,
+      [uib-popover-popup].popover.top-left > .arrow,
+      [uib-popover-popup].popover.top-right > .arrow,
+      [uib-popover-popup].popover.bottom-left > .arrow,
+      [uib-popover-popup].popover.bottom-right > .arrow,
+      [uib-popover-popup].popover.left-top > .arrow,
+      [uib-popover-popup].popover.left-bottom > .arrow,
+      [uib-popover-popup].popover.right-top > .arrow,
+      [uib-popover-popup].popover.right-bottom > .arrow,
+      [uib-popover-html-popup].popover.top-left > .arrow,
+      [uib-popover-html-popup].popover.top-right > .arrow,
+      [uib-popover-html-popup].popover.bottom-left > .arrow,
+      [uib-popover-html-popup].popover.bottom-right > .arrow,
+      [uib-popover-html-popup].popover.left-top > .arrow,
+      [uib-popover-html-popup].popover.left-bottom > .arrow,
+      [uib-popover-html-popup].popover.right-top > .arrow,
+      [uib-popover-html-popup].popover.right-bottom > .arrow,
+      [uib-popover-template-popup].popover.top-left > .arrow,
+      [uib-popover-template-popup].popover.top-right > .arrow,
+      [uib-popover-template-popup].popover.bottom-left > .arrow,
+      [uib-popover-template-popup].popover.bottom-right > .arrow,
+      [uib-popover-template-popup].popover.left-top > .arrow,
+      [uib-popover-template-popup].popover.left-bottom > .arrow,
+      [uib-popover-template-popup].popover.right-top > .arrow,
+      [uib-popover-template-popup].popover.right-bottom > .arrow {
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin: 0;
+      }
+      [uib-popover-popup].popover,
+      [uib-popover-html-popup].popover,
+      [uib-popover-template-popup].popover {
+        display: block !important;
+      }
+    </style>
+    <style type="text/css">
+      .uib-datepicker-popup.dropdown-menu {
+        display: block;
+        float: none;
+        margin: 0;
+      }
+      .uib-button-bar {
+        padding: 10px 9px 2px;
+      }
+    </style>
+    <style type="text/css">
+      .uib-position-measure {
+        display: block !important;
+        visibility: hidden !important;
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+      }
+      .uib-position-scrollbar-measure {
+        position: absolute !important;
+        top: -9999px !important;
+        width: 50px !important;
+        height: 50px !important;
+        overflow: scroll !important;
+      }
+      .uib-position-body-scrollbar-measure {
+        overflow: scroll !important;
+      }
+    </style>
+    <style type="text/css">
+      .uib-datepicker .uib-title {
+        width: 100%;
+      }
+      .uib-day button,
+      .uib-month button,
+      .uib-year button {
+        min-width: 100%;
+      }
+      .uib-left,
+      .uib-right {
+        width: 100%;
+      }
+    </style>
+    <style type="text/css">
+      .ng-animate.item:not(.left):not(.right) {
+        -webkit-transition: 0s ease-in-out left;
+        transition: 0s ease-in-out left;
+      }
+    </style>
+    <style type="text/css">
+      [ng\:cloak],
+      [ng-cloak],
+      [data-ng-cloak],
+      [x-ng-cloak],
+      .ng-cloak,
+      .x-ng-cloak,
+      .ng-hide:not(.ng-hide-animate) {
+        display: none !important;
+      }
+      ng\:form {
+        display: block;
+      }
+      .ng-animate-shim {
+        visibility: hidden;
+      }
+      .ng-anchor {
+        position: absolute;
+      }
+    </style>
+    <script
+      type="text/javascript"
+      async=""
+      charset="utf-8"
+      id="utag_600"
+      src="https://www.googletagmanager.com/gtag/js?id=AW-982939172"
+    ></script>
+    <script
+      src="//tags.tiqcdn.com/utag/tsb/secure-tsb-uk/prod/utag.js"
+      type="text/javascript"
+      async=""
+    ></script>
+    <script>
+      var tokenId = "";
+    </script>
+
+    <script
+      type="text/javascript"
+      async=""
+      charset="utf-8"
+      id="utag_tsb.secure-tsb-uk_600"
+      src="//tags.tiqcdn.com/utag/tsb/secure-tsb-uk/prod/utag.600.js?utv=ut4.51.202406041434"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      charset="utf-8"
+      id="utag_tsb.secure-tsb-uk_766"
+      src="//tags.tiqcdn.com/utag/tsb/secure-tsb-uk/prod/utag.766.js?utv=ut4.51.202312130958"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="sessionLogBefore" style="display: none">
+      <!--%=sessionValues.toString()%-->
+    </div>
+    <div tabindex="0" id="dummydiv"></div>
+    <title>Login</title>
+    <meta
+      name="description"
+      property="description"
+      content="Welcome to Internet Banking"
+    />
+
+    <script>
+      var timeForInactivity = "240";
+      var timeToWaitToRefreshSession = "180";
+    </script>
+
+    <script>
+      if (typeof console !== "undefined") {
+        // if (typeof console.log !== "undefined") {
+        //   console.log = function () {};
+        // }
+        if (typeof console.debug !== "undefined") {
+          console.debug = function () {};
+        }
+        if (typeof console.error !== "undefined") {
+          console.error = function () {};
+        }
+        if (typeof console.info !== "undefined") {
+          console.info = function () {};
+        }
+        if (typeof console.trace !== "undefined") {
+          console.trace = function () {};
+        }
+        if (typeof console.warn !== "undefined") {
+          console.warn = function () {};
+        }
+      }
+    </script>
+    <meta charset="UTF-8" /><meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script
+      type="text/javascript"
+      src="/sites/ruxitagentjs_ICANQVfghqrux_10309250310100759.js"
+      data-dtconfig="app=a89a2eb0394dc8d7|featureHash=ICANQVfghqrux|msl=153600|xb=.*internetbanking^bs.tsb^bs.co^bs.uk^bs/sites^bs/Satellite.*^p.*clicktale.net.*^p.*omtrdc.net.*|rdnt=1|uxrgce=1|cuc=m9tfmi8r|srms=2,2,1,|mdl=mdcc16=20,mdcc17=20,mdcc21=20|mel=100000|dpvc=1|md=mdcc1=a[name='Host']@content,mdcc2=bdocument.referrer,mdcc3=bnavigator.userAgent,mdcc4=dutm_campaign,mdcc5=dutm_content,mdcc6=dutm_medium,mdcc7=dutm_source,mdcc10=bs.events,mdcc15=a.form-error,mdcc16=a#onlineSalesProcesses div[ng-if^e^dqvm.message^dq] .text-std,mdcc17=a#onlineSalesProcesses div[ng-if^e^dqvm.message^dq] .text-std,mdcc18=a#onlineSalesProcesses div[ng-if^e^dqvm.message^dq] .text-std,mdcc19=c54b28ba495d07020391,mdcc20=bloggedInUserId,mdcc21=aspan[ng-if^e^dq!fraudError &amp;&amp; !blockUser^dq]^rb.ng-binding,mdcc22=a.col-xs-12 ^rb h1,mdcc23=aspan[ng-bind^^^e^dqerrorMessage^dq]|lastModification=1743005090977|mdp=mdcc15,mdcc16,mdcc17,mdcc18,mdcc21|tp=500,50,0|agentUri=/sites/ruxitagentjs_ICANQVfghqrux_10309250310100759.js|reportUrl=/sites/rb_bf82651uij|rid=RID_1571650063|rpid=1181489007|domain=tsb.co.uk"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="static/private/img/icons/favicon.ico"
+    /><link
+      rel="stylesheet"
+      type="text/css"
+      media="print"
+      href="static/private/css/print_base-min.css?v=2.3.5"
+    /><link
+      rel="stylesheet"
+      type="text/css"
+      media="screen,print"
+      href="static/private/css/styles-min.css?v=2.3.5"
+    /><link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="static/private/css/promotionals-min.css?v=2.3.5"
+    />
+    <script
+      type="text/javascript"
+      src="static/private/dep_releases/release0.4.min.js?v=4.0"
+    ></script>
+    <script>
+      var org_id = "551fvs6v";
+    </script>
+    <script>
+      var subdomain = "check2.tsb.co.uk";
+    </script>
+    <script
+      type="text/javascript"
+      src="static/private/libs/lodash-4.11.1-min.js?v=2.3.5"
+    ></script>
+    <script
+      type="text/javascript"
+      src="static/private/libs/postal-2.0.5-min.js?v=2.3.5"
+    ></script>
+    <script
+      type="text/javascript"
+      src="static/private/libs/jspdf.min-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="static/private/libs/jspdf.plugin.autotable-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="static/private/libs/iframeResizer.min-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="static/private/libs/satsbpt0326-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="static/private/js/functionalities-min.js?v=2.3.5"
+    ></script>
+    <script
+      type="text/javascript"
+      src="static/private/js/promotionals-min.js?v=2.3.5"
+    ></script>
+    <script
+      type="text/javascript"
+      src="static/private/js/tpage-default-private-min.js?v=2.3.5"
+    ></script>
+    <script
+      type="text/javascript"
+      src="static/private/js/simpleSlider-min.js?v=2.3.5"
+    ></script>
+    <script src="//tags.tiqcdn.com/utag/tsb/secure-tsb-uk/prod/utag.sync.js"></script>
+
+    <script type="text/javascript">
+      var tsid, bsid, buuid;
+      tsid = "3893e41b5f1cd1fb2deb9b656043311062eeef7d784c809e851e57b33081b96b";
+    </script>
+    <script
+      defer=""
+      type="text/javascript"
+      src="https://check2.tsb.co.uk/fp/tags.js?org_id=551fvs6v&amp;session_id=3893e41b5f1cd1fb2deb9b656043311062eeef7d784c809e851e57b33081b96b"
+    ></script>
+    <script type="text/javascript">
+      tsid = "3893e41b5f1cd1fb2deb9b656043311062eeef7d784c809e851e57b33081b96b";
+    </script>
+    <input
+      type="hidden"
+      name="logoffPageId"
+      id="logoffPageId"
+      value="1464168088879"
+    />
+    <input type="hidden" name="loginParam" id="loginParam" value="login" />
+    <input type="hidden" name="cuPageId" id="cuPageId" value="1464167933360" />
+
+    <script
+      type="text/javascript"
+      src="static/private/js/bc_f_ver1-min.js?v=2.3.5"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://bcdn-f4e48049.we-stats.com/scripts/f4e48049/f4e48049ver2.js"
+      async=""
+      onload="setSessionIdentier('1464168088879','1464167933360')"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="static/private/js/JSManager-min.js?v=2.3.5"
+    ></script>
+
+    <script>
+      var urlHash = window.location.hash;
+
+      if (urlHash == "" || urlHash == null) {
+        window.location.hash = "";
+      }
+      var currentPageId = 1464167933360;
+    </script>
+
+    <script>
+      // UATSB-144544 -dtsa cookie fix
+      var dtSaCookieValue = getCookieByName("dtSa");
+      var tokenIndex = dtSaCookieValue ? dtSaCookieValue.indexOf("token") : -1;
+      if (tokenIndex !== -1) {
+        /*var beforeTokenValue = dtSaCookieValue.substring(0, tokenIndex);
+	           var afterTokenValue  = dtSaCookieValue.substring(tokenIndex, dtSaCookieValue.length);
+	           var afterTokenValueArray = afterTokenValue ? afterTokenValue.split('&') : [];
+	           afterTokenValueArray	 = afterTokenValueArray.slice(1);
+	           var afterFinalTokenValue = afterTokenValueArray.join('&');
+	           var finalValue = beforeTokenValue + afterFinalTokenValue;
+	           var hostName = window.location.hostname;
+	           var hostNameArray = hostName.split('.');
+	           if(hostNameArray.length > 3) {
+		       hostNameArray = hostNameArray.slice(-3);
+	           }
+	           var subdomainName = '.' + hostNameArray.join('.');
+	           document.cookie = 'dtSa='+encodeURIComponent(finalValue)+'; domain='+ subdomainName + ';path=/';	*/
+        window.location.reload();
+      }
+    </script>
+
+    <!-- UATSB-138751 - Code Starts Here -->
+    <input
+      type="hidden"
+      name="tealiumEnvironment"
+      id="tealiumEnvironment"
+      value="prod"
+    />
+    <input
+      type="hidden"
+      name="tealiumData"
+      id="tealiumData"
+      value="tealiumData"
+    />
+    <input
+      type="hidden"
+      name="dcsid"
+      id="dcsid"
+      value="dcstd5kayuz5bdovxamzuuhkl_4d9w"
+    />
+    <input type="hidden" name="brand" id="brand" value="TSB" />
+    <input
+      type="hidden"
+      name="loginstatus"
+      id="loginstatus"
+      value="Not Logged"
+    />
+    <input
+      type="hidden"
+      name="sessionid"
+      id="sessionid"
+      value="5356b0fb31f46116ececb07d6d4e74e6aa2e7aa64174b10d2dea8bf14f1833c3"
+    />
+    <input type="hidden" name="environment" id="environment" value="Live" />
+    <input type="hidden" name="sitesegment" id="sitesegment" value="Retail" />
+    <input
+      type="hidden"
+      name="splitparam"
+      id="splitparam"
+      value="DotCom;HomePage"
+    />
+    <input type="hidden" name="pageName" id="pageName" value="Login" />
+    <input
+      type="hidden"
+      name="pageCategory"
+      id="pageCategory"
+      value="Home Page"
+    />
+    <input
+      type="hidden"
+      name="pageSubCategory"
+      id="pageSubCategory"
+      value="Home Page"
+    />
+    <input type="hidden" name="pageType" id="pageType" value="" />
+    <input type="hidden" name="userids" id="userids" value="" />
+    <!-- UATSB-138751 - Code Ends Here -->
+    <!-- CHR-20115 - Overdrafts Tealium Tagging starts -->
+
+    <input
+      type="hidden"
+      name="usersession_week"
+      id="usersession_week"
+      value="Saturday"
+    />
+    <input
+      type="hidden"
+      name="usersession_date"
+      id="usersession_date"
+      value="20250329"
+    />
+    <input
+      type="hidden"
+      name="usersession_hour"
+      id="usersession_hour"
+      value="0324"
+    />
+
+    <!-- CHR-20115 - Overdrafts Tealium Tagging ends -->
+
+    <!-- UATSB-138751 - Code Starts Here -->
+    <input
+      type="hidden"
+      name="tracking_Tealium"
+      id="tracking_Tealium"
+      value="tracking_Tealium"
+    />
+    <input
+      type="hidden"
+      name="tealiumProfile"
+      id="tealiumProfile"
+      value="secure-tsb-uk"
+    />
+    <!-- UATSB-138751 - Code Ends Here -->
+
+    <!-- UATSB-138751 - Code Starts Here -->
+    <input type="hidden" name="adobe" id="adobe" value="adobe" />
+    <input
+      type="hidden"
+      name="creativityList"
+      id="creativityList"
+      value="null"
+    />
+    <!-- UATSB-138751 - Code Ends Here -->
+
+    <input type="hidden" name="timingUtag" id="timingUtag" value="2000" />
+
+    <!-- UATSB-138751 - Code Starts Here -->
+    <input
+      type="hidden"
+      name="sitePageTitle"
+      id="sitePageTitle"
+      value="sitePageTitle"
+    />
+    <input
+      type="hidden"
+      name="timingadobetarget"
+      id="timingadobetarget"
+      value=" 5000"
+    />
+    <!-- UATSB-138751 - Code Ends Here -->
+
+    <input
+      type="hidden"
+      name="pageConf"
+      id="pageConf"
+      data-pageid="1464167933360"
+      data-hash=""
+      data-site="private"
+      data-loggedin="false"
+    />
+    <script>
+      // Setting variables for the JSManager
+      var conf = conf || {};
+      conf.baseurl = window.location.protocol + "//" + window.location.host;
+      conf.site = "private";
+      conf["getContent_URL"] =
+        conf.baseurl + "/cmsrestapi/rules/" + conf.site + "/getContent/";
+      conf["getSiteUrls_URL"] =
+        conf.baseurl + "/sites/Satellite?pagename=seGetSiteUrls";
+      conf.timingJSManager = 5000;
+      conf.timeNextTry = 250;
+    </script>
+
+    <div id="responsive-menu" class="hidden">
+      <div id="responsive-heading">
+        <span class="icon-close-lg" onclick="toggleResponsiveMenu()"></span>
+      </div>
+      <div class="responsive-body">
+        <div class="responsive-link">
+          <span class="icon-arrow-right"></span>
+          <a href="/personal/a/cookie-policy/">Cookie Policy</a>
+        </div>
+        <div class="responsive-link">
+          <span class="icon-lock"></span>
+          <a class="not-clickable">This site is secure</a>
+        </div>
+        <div class="responsive-link">
+          <span class="icon-arrow-right"></span>
+          <a href="https://www.tsb.co.uk/fraud-prevention-centre/"
+            >How can I tell that this site is secure?</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="wrapperDefault">
+      <div class="container">
+        <nav class="navbar navbar-default header-tsb">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              onclick="toggleResponsiveMenu()"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+              <h2
+                id="env-identifier"
+                style="
+                  background: yellow;
+                  font-size: 42px;
+                  margin: 0;
+                  position: absolute;
+                  color: red;
+                  font-weight: bold;
+                "
+              ></h2>
+              <img
+                src="/sites/Satellite?blobcol=urldata&amp;blobkey=id&amp;blobtable=MungoBlobs&amp;blobwhere=1490878819032&amp;ssbinary=true"
+                alt="TSB logo"
+              />
+            </div>
+          </div>
+          <div
+            class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <div class="loggedIn">
+              <ul class="nav navbar-nav navbar-right abcd unordered-list">
+                <li class="list-element no-bullet">
+                  <a
+                    href="/personal/a/cookie-policy/"
+                    target="_self"
+                    id="lp-cookie-policy"
+                    title="Cookie Policy"
+                    class=""
+                    >Cookie Policy</a
+                  >
+                </li>
+
+                <ul class="abcd unordered-list">
+                  <li class="list-element no-bullet">
+                    <a
+                      href="http://tsb.co.uk/security.asp"
+                      target="_blank"
+                      id="lp-how-to-check-a-site-is-secure?"
+                      title="How to check a site is secure?"
+                      class=""
+                      >How to check a site is secure?</a
+                    >
+                  </li>
+
+                  <li class="list-element no-bullet">
+                    <span class="icon-lock"></span>
+                    <a class="not-clickable">This site is secure</a>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="pageWrap">
+        <div class="container">
+          <div
+            id="experienceathead"
+            class="col-md-12"
+            style="margin-bottom: 2px"
+          ></div>
+          <div id="page">
+            <div class="row">
+              <div class="col-md-8 col-xs-12">
+                <div class="primary" id="literalsLoader" style="display: block">
+                  <script>
+                    spaParams = {};
+                    console.log(
+                      "SPA is getting the following params:",
+                      spaParams
+                    );
+                  </script>
+
+                  <div
+                    id="spa-credentialsPublic-1.0"
+                    spacode="credentialsPublic"
+                    spaid="1464167919044"
+                    class="clearfix"
+                  >
+                    <link
+                      rel="stylesheet"
+                      href="/spasR52/credentialsPublic/styles/css/vendor/a95cdcff.vendor.min.css"
+                    />
+                    <link
+                      rel="stylesheet"
+                      href="/spasR52/credentialsPublic/styles/css/tsb-credentials-public/0dcd24bb.tsb-credentials-public.min.css"
+                    />
+
+                    <!-- uiView:  -->
+                    <div
+                      id="credentialsPublic"
+                      ui-view=""
+                      autoscroll="false"
+                      class="ng-scope"
+                    >
+                      <!-- ngInclude: '/spasR52/credentialsPublic/components/credentials-public/log-on/sca-modals/sca-modals-tpl.html' -->
+                      <div
+                        ng-include="'/spasR52/credentialsPublic/components/credentials-public/log-on/sca-modals/sca-modals-tpl.html'"
+                        class="ng-scope"
+                      >
+                        <div
+                          id="modalTimeOut"
+                          class="modal fade ng-isolate-scope"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="modalTimeOutLabel"
+                          size="lg"
+                          modal-id="modalTimeOut"
+                          modal-size="md"
+                          modal-type="primary"
+                          component="modalTimeOut"
+                        >
+                          <div class="modal-dialog modal-md" role="document">
+                            <div class="modal-content modal-primary">
+                              <ng-transclude
+                                ><div
+                                  class="modal-header no-padding-top ng-isolate-scope"
+                                >
+                                  <a
+                                    class="close"
+                                    data-dismiss="modal"
+                                    aria-label="Close"
+                                    ng-click="$parent.close()"
+                                    ><span
+                                      aria-hidden="true"
+                                      class="hidden-lg hidden-md hidden-sm"
+                                      >×</span
+                                    ></a
+                                  ><ng-transclude
+                                    ><div class="row ng-scope">
+                                      <div class="col-md-12 lg-padding-left">
+                                        <span
+                                          class="md-margin-top float-icon icon-error icon-error"
+                                          icon="error"
+                                        ></span>
+                                        <h2
+                                          class="text-bold md-margin-top lg-margin-left ng-scope"
+                                          paragraph="true"
+                                          translate="ERROR_TIMEOUT_TITLE"
+                                        >
+                                          You have not logged in on time
+                                        </h2>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="proteo-select-account-body modal-body ng-isolate-scope"
+                                    >
+                                      <ng-transclude
+                                        ><div class="row ng-scope">
+                                          <div class="col-md-12">
+                                            <p
+                                              class="text-std"
+                                              ng-transclude=""
+                                              paragraph="true"
+                                              translate="ERROR_TIMEOUT_DESCRIPTION"
+                                            >
+                                              As you've been inactive for a
+                                              while you'll need to log in again
+                                              for security reasons.
+                                            </p>
+                                          </div>
+                                        </div></ng-transclude
+                                      >
+                                    </div>
+                                    <div
+                                      class="center-button modal-footer ng-isolate-scope"
+                                      ng-transclude=""
+                                    >
+                                      <button
+                                        class="btn md-btn ng-isolate-scope"
+                                        ng-transclude=""
+                                        ng-click="modalTimeOut.close()"
+                                      >
+                                        <span
+                                          class="text-std"
+                                          ng-transclude=""
+                                          translate="ERROR_TIMEOUT_BUTTON"
+                                          >Log back into your accounts</span
+                                        >
+                                      </button>
+                                    </div></ng-transclude
+                                  >
+                                </div></ng-transclude
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          id="modalTimeOutFTL"
+                          class="modal fade ng-isolate-scope"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="modalTimeOutFTLLabel"
+                          size="lg"
+                          modal-id="modalTimeOutFTL"
+                          modal-size="md"
+                          modal-type="primary"
+                          component="modalTimeOutFTL"
+                        >
+                          <div class="modal-dialog modal-md" role="document">
+                            <div class="modal-content modal-primary">
+                              <ng-transclude
+                                ><div
+                                  class="modal-header no-padding-top ng-isolate-scope"
+                                >
+                                  <a
+                                    class="close"
+                                    data-dismiss="modal"
+                                    aria-label="Close"
+                                    ng-click="$parent.close()"
+                                    ><span
+                                      aria-hidden="true"
+                                      class="hidden-lg hidden-md hidden-sm"
+                                      >×</span
+                                    ></a
+                                  ><ng-transclude
+                                    ><div class="row ng-scope">
+                                      <div class="col-md-12 lg-padding-left">
+                                        <span
+                                          class="md-margin-top float-icon icon-error icon-error"
+                                          icon="error"
+                                        ></span>
+                                        <h2
+                                          class="md-margin-top lg-margin-left ng-scope"
+                                          paragraph="true"
+                                          translate="ERROR_TIMEOUT_TITLE_NEW"
+                                        >
+                                          Are you still there?
+                                        </h2>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="proteo-select-account-body modal-body ng-isolate-scope"
+                                    >
+                                      <ng-transclude
+                                        ><div class="row ng-scope">
+                                          <div class="col-md-12">
+                                            <p
+                                              class="text-std"
+                                              ng-transclude=""
+                                              paragraph="true"
+                                              translate="ERROR_TIMEOUT_DESCRIPTION_NEW"
+                                            >
+                                              As you’ve been inactive for a
+                                              while, we’ve logged you off to
+                                              keep your account safe. Please log
+                                              in again.
+                                            </p>
+                                          </div>
+                                        </div></ng-transclude
+                                      >
+                                    </div>
+                                    <div
+                                      class="center-button modal-footer ng-isolate-scope"
+                                      ng-transclude=""
+                                    >
+                                      <button
+                                        class="btn md-btn ng-isolate-scope"
+                                        ng-transclude=""
+                                        ng-click="modalTimeOutFTL.close()"
+                                      >
+                                        <span
+                                          class="text-std"
+                                          ng-transclude=""
+                                          translate="ERROR_TIMEOUT_BUTTON_NEW"
+                                          >Log in</span
+                                        >
+                                      </button>
+                                    </div></ng-transclude
+                                  >
+                                </div></ng-transclude
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          ng-controller="scaModalsController"
+                          class="ng-scope"
+                        >
+                          <div
+                            id="addBlockModalError"
+                            class="modal fade ng-isolate-scope"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="addBlockModalErrorLabel"
+                            size="lg"
+                            modal-id="addBlockModalError"
+                            modal-size="md"
+                            modal-type="primary"
+                            data-backdrop="static"
+                            data-keyboard="false"
+                          >
+                            <div class="modal-dialog modal-md" role="document">
+                              <div class="modal-content modal-primary">
+                                <ng-transclude
+                                  ><div
+                                    class="row md-margin-top md-margin-left md-margin-right ng-scope"
+                                  >
+                                    <h2>
+                                      <div
+                                        ng-show="(!isActivation.length > 0 &amp;&amp; !firstLoginOtpFlow.length > 0 &amp;&amp; !lastAttemptFlow.length > 0) "
+                                      >
+                                        <span
+                                          class="text-bold text-std"
+                                          ng-transclude=""
+                                          translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_TITLE"
+                                          >Something's not right</span
+                                        >
+                                      </div>
+                                      <div
+                                        ng-show="(isActivation.length > 0 || firstLoginOtpFlow.length > 0)"
+                                        class="ng-hide"
+                                      >
+                                        <span
+                                          class="text-bold ml-10 text-std"
+                                          ng-transclude=""
+                                          translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_TITLE_SSL"
+                                          >Sorry, that didn't work</span
+                                        >
+                                      </div>
+                                      <div
+                                        ng-show="(lastAttemptFlow.length > 0)"
+                                        class="ng-hide"
+                                      >
+                                        <span
+                                          class="text-bold ml-10 text-std"
+                                          ng-transclude=""
+                                          translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_TITLE_LA"
+                                          >Keeping your account safe</span
+                                        >
+                                      </div>
+                                    </h2>
+                                  </div>
+                                  <div
+                                    class="md-margin-top md-margin-left md-margin-right modal-body ng-isolate-scope"
+                                    ng-show="(!isActivation.length > 0 &amp;&amp; !firstLoginOtpFlow.length > 0 &amp;&amp; !lastAttemptFlow.length > 0)"
+                                  >
+                                    <ng-transclude
+                                      ><div
+                                        id="loginModalError"
+                                        class="md-margin text-red text-bold ng-scope"
+                                        ng-show="errorRemainingAttempts !== null"
+                                      >
+                                        <span
+                                          class="text-bold text-std"
+                                          ng-transclude=""
+                                          ng-bind="errorRemainingAttempts"
+                                        ></span>
+                                      </div>
+                                      <span
+                                        class="text-std"
+                                        ng-transclude=""
+                                        translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT1"
+                                        >One or more of the details you've
+                                        provided don't match our records.</span
+                                      >
+                                      <div
+                                        class="md-margin-top md-margin-bottom ng-scope"
+                                      >
+                                        <ul
+                                          class="unordered-list md-padding-left"
+                                        >
+                                          <li class="list-element">
+                                            <span
+                                              class="text-std"
+                                              ng-transclude=""
+                                              translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT2"
+                                              >Check that you're entering the
+                                              correct Internet Banking password
+                                              and characters from your memorable
+                                              information</span
+                                            >
+                                          </li>
+                                          <li class="list-element">
+                                            <span
+                                              class="text-std"
+                                              ng-transclude=""
+                                              translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT3"
+                                              >You can</span
+                                            >&nbsp;<a
+                                              class="link-std ng-isolate-scope"
+                                              ng-href=""
+                                              ng-transclude=""
+                                              ng-click="enterCustomerIdData()"
+                                              ><span
+                                                class="text-std"
+                                                ng-transclude=""
+                                                translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT4"
+                                                >reset your login details</span
+                                              ></a
+                                            >&nbsp;<span
+                                              class="text-std"
+                                              ng-transclude=""
+                                              translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT5"
+                                              >if you've forgotten them</span
+                                            >
+                                          </li>
+                                          <!-- ngIf: isOtp || isPassAndOtp -->
+                                        </ul>
+                                        <div class="md-margin-top">
+                                          <span
+                                            class="text-std"
+                                            ng-transclude=""
+                                            translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT7"
+                                            >Still having problems? Give us a
+                                            call on 0345 835 3844 (Mon to Fri
+                                            7am-10pm, weekends 8am-6pm). Or you
+                                            can pop into your local
+                                            branch.</span
+                                          >
+                                        </div>
+                                      </div></ng-transclude
+                                    >
+                                  </div>
+                                  <div
+                                    class="md-margin-top md-margin-left md-margin-right modal-body ng-isolate-scope ng-hide"
+                                    ng-show="(isActivation.length > 0)"
+                                  >
+                                    <ng-transclude
+                                      ><div
+                                        class="unordered-list md-padding-left ng-scope"
+                                      >
+                                        <span
+                                          class="md-margin-txt text-std"
+                                          ng-transclude=""
+                                          translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT1_ACTCODE"
+                                          >The password or activation code you
+                                          entered is incorrect.</span
+                                        >
+                                        <div
+                                          id="loginModalError"
+                                          class="text mt-20"
+                                          ng-show="errorRemainingAttempts !== null"
+                                        >
+                                          <span
+                                            class="md-margin-txt text-std"
+                                            ng-transclude=""
+                                            ng-bind="errorRemainingAttempts"
+                                          ></span>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="md-margin-top md-margin-bottom ng-scope"
+                                      >
+                                        <div
+                                          class="unordered-list md-padding-left"
+                                        >
+                                          <span
+                                            class="md-margin-txt text-std"
+                                            ng-transclude=""
+                                            translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT3_ACTCODE"
+                                            >Forgotten login details?</span
+                                          >&nbsp;<a
+                                            class="link-std ng-isolate-scope"
+                                            ng-href=""
+                                            ng-transclude=""
+                                            ng-click="enterCustomerIdData()"
+                                            ><span
+                                              class="md-margin-link text-std"
+                                              ng-transclude=""
+                                              translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT4_ACTCODE"
+                                              >Reset them now.</span
+                                            ></a
+                                          >&nbsp;
+                                        </div>
+                                      </div></ng-transclude
+                                    >
+                                  </div>
+                                  <div
+                                    class="md-margin-top md-margin-left md-margin-right modal-body ng-isolate-scope ng-hide"
+                                    ng-show="(firstLoginOtpFlow.length > 0)"
+                                  >
+                                    <ng-transclude
+                                      ><div
+                                        class="unordered-list md-padding-left ng-scope"
+                                      >
+                                        <span
+                                          class="md-margin-txt mt-20 text-std"
+                                          ng-transclude=""
+                                          translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT1_SSL"
+                                          >Please check that the password you
+                                          entered is correct.</span
+                                        >
+                                      </div>
+                                      <div
+                                        class="unordered-list md-padding-left mt-20 ng-scope"
+                                      >
+                                        <div
+                                          id="loginModalError"
+                                          class="text"
+                                          ng-show="errorRemainingAttempts !== null"
+                                        >
+                                          <span
+                                            class="md-margin-txt text-std"
+                                            ng-transclude=""
+                                            ng-bind="errorRemainingAttempts"
+                                          ></span>
+                                        </div>
+                                        <div class="mt-20">
+                                          <span
+                                            class="md-margin-txt text-std"
+                                            ng-transclude=""
+                                            translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT2_SSL"
+                                            >Can’t see the One-Time Password we
+                                            sent by text? Make sure you gave us
+                                            the right phone number.</span
+                                          >
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="md-margin-top md-margin-bottom ng-scope"
+                                      >
+                                        <div
+                                          class="unordered-list md-padding-left"
+                                        >
+                                          <span
+                                            class="md-margin-txt text-std"
+                                            ng-transclude=""
+                                            translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT3_SSL"
+                                            >Forgotten login details?</span
+                                          >&nbsp;<a
+                                            class="link-std ng-isolate-scope"
+                                            ng-href=""
+                                            ng-transclude=""
+                                            ng-click="enterCustomerIdData()"
+                                            ><span
+                                              class="md-margin-link text-std"
+                                              ng-transclude=""
+                                              translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT4_SSL"
+                                              >Reset them now.</span
+                                            ></a
+                                          >&nbsp;
+                                        </div>
+                                      </div></ng-transclude
+                                    >
+                                  </div>
+                                  <div
+                                    class="md-margin-top md-margin-left md-margin-right modal-body ng-isolate-scope ng-hide"
+                                    ng-show="lastAttemptFlow.length > 0"
+                                  >
+                                    <ng-transclude
+                                      ><div
+                                        class="unordered-list md-padding-left ng-scope"
+                                      >
+                                        <span
+                                          class="md-margin-txt text-std"
+                                          ng-transclude=""
+                                          id="last1"
+                                          translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT1_LA"
+                                          >Sorry, we’ve blocked your access to
+                                          digital banking because you tried to
+                                          log in 5 times with wrong
+                                          information.</span
+                                        >
+                                        <div class="mt-20">
+                                          <span
+                                            class="md-margin-txt text-std"
+                                            ng-transclude=""
+                                            id="last2"
+                                            translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_LOG_IN_TEXT1_LA2"
+                                            >To get back in, click Reset login
+                                            details.</span
+                                          >
+                                        </div>
+                                      </div></ng-transclude
+                                    >
+                                  </div>
+                                  <div
+                                    class="md-margin-top md-margin-left md-margin-right modal-footer ng-isolate-scope"
+                                    ng-transclude=""
+                                    ng-show="(!isActivation.length > 0 &amp;&amp; !firstLoginOtpFlow.length > 0 &amp;&amp; !lastAttemptFlow.length > 0)"
+                                  >
+                                    <proteo-ui-modal-call-back class="ng-scope"
+                                      ><div class="row">
+                                        <button
+                                          class="center-block btn md-btn ng-isolate-scope"
+                                          ng-transclude=""
+                                          ng-click="tryAgainLogin()"
+                                        >
+                                          <span
+                                            class="text-std"
+                                            ng-transclude=""
+                                            translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_TRYAGAIN"
+                                            >Let's try again!</span
+                                          >
+                                        </button>
+                                      </div></proteo-ui-modal-call-back
+                                    >
+                                  </div>
+                                  <div
+                                    class="md-margin-top md-margin-left md-margin-right modal-footer ng-isolate-scope ng-hide"
+                                    ng-transclude=""
+                                    ng-show="isActivation.length > 0"
+                                  >
+                                    <proteo-ui-modal-call-back class="ng-scope"
+                                      ><div class="row">
+                                        <button
+                                          class="pull-right btn md-btn ng-isolate-scope"
+                                          ng-transclude=""
+                                          ng-click="tryAgainLogin()"
+                                          id="button"
+                                        >
+                                          <span
+                                            class="text-std"
+                                            ng-transclude=""
+                                            translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_TRYAGAIN_RESET"
+                                            >Try again</span
+                                          >
+                                        </button>
+                                        <div>
+                                          <!-- ngIf: !lastAttempt --><button
+                                            class="pull-left btn md-btn ng-isolate-scope"
+                                            ng-transclude=""
+                                            ng-click="getActCode()"
+                                            ng-if="!lastAttempt"
+                                            id="btn1"
+                                          >
+                                            <span
+                                              class="text-std"
+                                              ng-transclude=""
+                                              id="fnt-color"
+                                              translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_GETACTCODE"
+                                              >Get new activation code</span
+                                            ></button
+                                          ><!-- end ngIf: !lastAttempt -->
+                                        </div>
+                                      </div></proteo-ui-modal-call-back
+                                    >
+                                  </div>
+                                  <div
+                                    class="md-margin-top md-margin-left md-margin-right modal-footer ng-isolate-scope ng-hide"
+                                    ng-transclude=""
+                                    ng-show="firstLoginOtpFlow.length > 0"
+                                  >
+                                    <proteo-ui-modal-call-back class="ng-scope"
+                                      ><div class="row" id="btnTryAgain">
+                                        <button
+                                          class="btn md-btn ng-isolate-scope"
+                                          ng-transclude=""
+                                          ng-click="tryAgainLogin()"
+                                          id="button"
+                                        >
+                                          <span
+                                            class="text-std"
+                                            ng-transclude=""
+                                            translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_TRYAGAIN_RESET"
+                                            >Try again</span
+                                          >
+                                        </button>
+                                      </div></proteo-ui-modal-call-back
+                                    >
+                                  </div>
+                                  <div
+                                    class="md-margin-top md-margin-left md-margin-right modal-footer ng-isolate-scope ng-hide"
+                                    ng-transclude=""
+                                    ng-show="lastAttemptFlow.length > 0"
+                                  >
+                                    <proteo-ui-modal-call-back class="ng-scope"
+                                      ><div class="row">
+                                        <button
+                                          class="pull-right btn md-btn ng-isolate-scope"
+                                          ng-transclude=""
+                                          ng-click="resetLogin()"
+                                          id="button"
+                                        >
+                                          <span
+                                            class="text-std"
+                                            ng-transclude=""
+                                            translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_RESETLOGIN"
+                                            >Reset login details</span
+                                          >
+                                        </button>
+                                        <div>
+                                          <button
+                                            class="pull-left btn md-btn ng-isolate-scope"
+                                            ng-transclude=""
+                                            ng-click="leave()"
+                                            id="btn1"
+                                          >
+                                            <span
+                                              class="text-std"
+                                              ng-transclude=""
+                                              id="fnt-color"
+                                              translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_INVALID_AUTHENTICATION_MODAL_GOBACKTOTSB"
+                                              >Back to tsb.co.uk</span
+                                            >
+                                          </button>
+                                        </div>
+                                      </div></proteo-ui-modal-call-back
+                                    >
+                                  </div></ng-transclude
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            id="addBlockModalDevice"
+                            class="modal fade ng-isolate-scope"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="addBlockModalDeviceLabel"
+                            size="lg"
+                            modal-id="addBlockModalDevice"
+                            modal-size="md"
+                            modal-type="primary"
+                            data-backdrop="static"
+                            data-keyboard="false"
+                          >
+                            <div class="modal-dialog modal-md" role="document">
+                              <div class="modal-content modal-primary">
+                                <ng-transclude
+                                  ><div
+                                    class="row md-margin-top md-margin-left md-margin-right ng-scope"
+                                  >
+                                    <h2>
+                                      <span
+                                        class="text-bold text-std"
+                                        ng-transclude=""
+                                        translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_ENROLLDEVICE_MODAL_TITLE"
+                                        >Is this your own device?</span
+                                      >
+                                    </h2>
+                                  </div>
+                                  <div
+                                    class="md-margin-top md-margin-left md-margin-right modal-body ng-isolate-scope"
+                                  >
+                                    <ng-transclude
+                                      ><span
+                                        class="text-std"
+                                        ng-transclude=""
+                                        translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_ENROLLDEVICE_MODAL_TEXT1"
+                                        >If only you have access to this device,
+                                        you can 'trust' it so we don't have to
+                                        send you a One-Time Password every time
+                                        you log in.</span
+                                      >
+                                      <div class="md-margin-top ng-scope">
+                                        <span
+                                          class="text-std"
+                                          ng-transclude=""
+                                          translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_ENROLLDEVICE_MODAL_TEXT2"
+                                          >If you share this device with someone
+                                          else, or you're using a computer in a
+                                          library or internet café for example,
+                                          you shouldn't 'trust' it.</span
+                                        >
+                                      </div></ng-transclude
+                                    >
+                                  </div>
+                                  <div
+                                    class="md-margin-top md-margin-left md-margin-right modal-footer ng-isolate-scope"
+                                    ng-transclude=""
+                                  >
+                                    <proteo-ui-modal-call-back class="ng-scope"
+                                      ><button
+                                        class="pull-right btn md-btn ng-isolate-scope"
+                                        ng-transclude=""
+                                        ng-click="trust()"
+                                      >
+                                        <span
+                                          class="text-std"
+                                          ng-transclude=""
+                                          translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_ENROLLDEVICE_MODAL_BUTTON_TRUST"
+                                          >Trust</span
+                                        ></button
+                                      ><button
+                                        class="mt-10 mt-sm-0 pull-left btn-white btn md-btn ng-isolate-scope"
+                                        ng-transclude=""
+                                        ng-click="dontTrust()"
+                                      >
+                                        <span
+                                          class="text-std"
+                                          ng-transclude=""
+                                          translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_ENROLLDEVICE_MODAL_BUTTON_NOTTRUST"
+                                          >Do not trust</span
+                                        >
+                                      </button></proteo-ui-modal-call-back
+                                    >
+                                  </div></ng-transclude
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            id="addBlockModalBrowser"
+                            class="modal fade ng-isolate-scope"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="addBlockModalBrowserLabel"
+                            size="lg"
+                            modal-id="addBlockModalBrowser"
+                            modal-size="md"
+                            modal-type="primary"
+                            data-backdrop="static"
+                            data-keyboard="false"
+                          >
+                            <div class="modal-dialog modal-md" role="document">
+                              <div class="modal-content modal-primary">
+                                <ng-transclude
+                                  ><div
+                                    class="row md-margin-top md-margin-left md-margin-right ng-scope"
+                                  >
+                                    <h2>
+                                      <span
+                                        class="text-bold text-std"
+                                        ng-transclude=""
+                                        translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_BROWSER_MODAL_TITLE"
+                                        >You are using a web browser not
+                                        supported by this website</span
+                                      >
+                                    </h2>
+                                  </div>
+                                  <div
+                                    class="md-margin-top md-margin-left md-margin-right modal-body ng-isolate-scope"
+                                  >
+                                    <ng-transclude
+                                      ><div class="md-margin-top ng-scope">
+                                        <span
+                                          class="text-std"
+                                          ng-transclude=""
+                                          translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_BROWSER_MODAL_TEXT1"
+                                          >This means that some function may not
+                                          work as supposed which can result in
+                                          strange behaviours when browsing
+                                          around.</span
+                                        >
+                                      </div>
+                                      <div
+                                        class="md-margin-top md-margin-bottom ng-scope"
+                                      >
+                                        <span
+                                          class="text-std"
+                                          ng-transclude=""
+                                          translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_BROWSER_MODAL_TEXT2"
+                                          >Thank you!</span
+                                        >
+                                      </div></ng-transclude
+                                    >
+                                  </div>
+                                  <div
+                                    class="md-margin-top md-margin-left md-margin-right modal-footer ng-isolate-scope"
+                                    ng-transclude=""
+                                  >
+                                    <proteo-ui-modal-call-back class="ng-scope"
+                                      ><button
+                                        class="center-block btn md-btn ng-isolate-scope"
+                                        ng-transclude=""
+                                        ng-click="agree()"
+                                      >
+                                        <span
+                                          class="text-std"
+                                          ng-transclude=""
+                                          translate="RETAIL_CREDENTIALS_PUBLIC_LOGON_SCA_BROWSER_MODAL_CLOSE"
+                                          >Understood</span
+                                        >
+                                      </button></proteo-ui-modal-call-back
+                                    >
+                                  </div></ng-transclude
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row ng-scope">
+                        <div
+                          class="col-xs-12 signaturePanel ng-isolate-scope"
+                          sca-enrollment-otp=""
+                          id="signaturePanelId"
+                        >
+                          <h1
+                            class="no-margin-top sm-margin-top ng-scope"
+                            translate="RETAIL_CREDENTIALS_PUBLIC_ENROLLMENT_OTP_TITLE"
+                          >
+                            Confirm your identity
+                          </h1>
+                          <!-- ngIf: globalError -->
+                          <div sca-enrollment-otp-panel-error="">
+                            <!-- ngIf: error -->
+                          </div>
+                          <form
+                            name="signatureForm"
+                            method="POST"
+                            class="ng-invalid ng-invalid-required ng-valid-pattern ng-dirty"
+                          >
+                            <sca-enrollment-otp-panel
+                              form-name="signatureForm"
+                              is-public-otp="true"
+                              operation-data="operationData"
+                              go-with-activation="notPhones()"
+                              class="ng-isolate-scope"
+                              ><div id="signaturePanel">
+                                <!-- ngIf: globalError --><!-- ngIf: templatename === 'nosign' --><!-- ngIf: templateName === 'otp' -->
+                                <div
+                                  ng-if="templateName === 'otp'"
+                                  class="ng-scope"
+                                >
+                                  <!-- ngIf: !$parent.selectedPhone && !isValidFlag -->
+                                  <div
+                                    ng-show="$parent.selectedPhone"
+                                    class="col-xs-12"
+                                  >
+                                    <div
+                                      class="row ng-isolate-scope"
+                                      is-sms="$parent.phone.type === 'mobile'"
+                                      reset-input="resetDirective"
+                                      entered-otp="$parent.data.otp"
+                                      is-sca="true"
+                                    >
+                                      <ng-form
+                                        name="OTPForm"
+                                        class="col-xs-12 ng-pristine ng-invalid ng-invalid-required ng-valid-pattern success"
+                                        ng-class="{'error xs-padding-top sm-padding-bottom' : !isSca &amp;&amp; showErrors(OTPForm), 'success' : !showErrors(OTPForm)}"
+                                        ><!-- ngIf: !isPaymentSca -->
+                                        <div
+                                          class="row ng-scope"
+                                          ng-if="!isPaymentSca"
+                                        >
+                                          <div class="col-xs-12">
+                                            <!-- ngIf: !isSms --><!-- ngIf: isSms -->
+                                            <div ng-if="isSms" class="ng-scope">
+                                              <h3
+                                                class="text-bold lg-margin-bottom ng-scope"
+                                                translate="AUTHENTICATION_PANEL_OTP_TITLE_MOBILE"
+                                              >
+                                                We have sent you a text with a
+                                                One Time Password (OTP)
+                                              </h3>
+                                              <p
+                                                class="text-std"
+                                                ng-transclude=""
+                                                paragraph=""
+                                                translate="AUTHENTICATION_PANEL_OTP_SUB_TITLE_MOBILE"
+                                              >
+                                                Please enter it below and select
+                                                “Continue”.
+                                                <strong
+                                                  >The OTP should only contain
+                                                  numbers.
+                                                </strong>
+                                              </p>
+                                            </div>
+                                            <!-- end ngIf: isSms -->
+                                          </div>
+                                        </div>
+                                        <!-- end ngIf: !isPaymentSca --><!-- ngIf: isPaymentSca -->
+                                        <div class="row">
+                                          <div
+                                            class="col-xs-8 col-sm-6 col-md-4 form-group has-feedback has-succees"
+                                            ng-class="{'has-feedback has-error' : showErrors(OTPForm), 'has-feedback has-succees' : !showErrors(OTPForm)}"
+                                          >
+                                            <div class="input-group">
+                                              <div class="input-group">
+                                                <input
+                                                  class="form-control ng-isolate-scope ng-invalid ng-invalid-required ng-valid-pattern"
+                                                  type="password"
+                                                  id="OTPInput"
+                                                  name="OTPInput"
+                                                  ng-model="enteredOtp"
+                                                  ng-required="true"
+                                                  ng-pattern="/^[0-9]*$/"
+                                                  ng-change="displayEmptyError = false"
+                                                  required="required"
+                                                /><span
+                                                  class="shift-icon input-group-addon icon-eye icon-eye ng-hide"
+                                                  ng-show="OTPForm &amp;&amp; OTPForm.OTPInput.$viewValue"
+                                                  ng-click="viewOTP = !viewOTP"
+                                                  icon="eye"
+                                                ></span>
+                                              </div>
+                                              <span
+                                                class="input-group-addon icon-alert icon-alert ng-hide"
+                                                ng-show="showErrors(OTPForm)"
+                                                icon="alert"
+                                              ></span
+                                              ><span
+                                                class="input-group-addon icon-check icon-check ng-hide"
+                                                ng-show="!showErrors(OTPForm) &amp;&amp; (OTPForm.OTPInput.$touched || OTPForm.$submitted)"
+                                                icon="check"
+                                              ></span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="has-error ng-hide"
+                                          ng-show="showErrors(OTPForm)"
+                                        >
+                                          <div
+                                            ng-show="!displayEmptyError &amp;&amp; OTPForm.OTPInput.$error.pattern"
+                                            class="ng-hide"
+                                          >
+                                            <span
+                                              class="form-error text-std"
+                                              ng-transclude=""
+                                              translate="AUTHENTICATION_PANEL_ERROR_OTP_FORMAT1"
+                                              >Please enter a valid OTP, it
+                                              should only contain numbers.</span
+                                            >
+                                          </div>
+                                          <div
+                                            ng-show="!displayEmptyError &amp;&amp; OTPForm.OTPInput.$error.required"
+                                          >
+                                            <span
+                                              class="form-error text-std"
+                                              ng-transclude=""
+                                              translate="AUTHENTICATION_PANEL_ERROR_OTP_REQUIRED"
+                                              >Please enter a value</span
+                                            >
+                                          </div>
+                                        </div>
+                                        <!-- ngIf: !isPaymentSca -->
+                                        <div
+                                          class="row md-margin-bottom ng-scope"
+                                          ng-if="!isPaymentSca"
+                                        >
+                                          <div class="col-xs-12">
+                                            <h2
+                                              translate="AUTHENTICATION_PANEL_TROUBLESHOOTING_TITLE"
+                                              class="ng-scope"
+                                            >
+                                              One-Time Passwords –
+                                              Troubleshooting
+                                            </h2>
+                                            <p
+                                              class="text-std"
+                                              ng-transclude=""
+                                              paragraph=""
+                                              translate="AUTHENTICATION_PANEL_TROUBLESHOOTING_SUBTITLE"
+                                            >
+                                              If you are experiencing any
+                                              problems in receiving your
+                                              One-Time Password, please look at
+                                              the hints and tips below:
+                                            </p>
+                                            <ul class="unordered-list">
+                                              <li>
+                                                <span
+                                                  class="text-std"
+                                                  ng-transclude=""
+                                                  translate="AUTHENTICATION_PANEL_TROUBLESHOOTING_LOGIN_TEXT1"
+                                                  >If you don’t receive the
+                                                  One-Time Password within 2
+                                                  minutes press ‘Cancel’. You
+                                                  can then try again with the
+                                                  same number or choose a
+                                                  different number for us to
+                                                  contact you on.</span
+                                                >
+                                              </li>
+                                              <li>
+                                                <span
+                                                  class="text-std"
+                                                  ng-transclude=""
+                                                  translate="AUTHENTICATION_PANEL_TROUBLESHOOTING_LOGIN_TEXT3"
+                                                  >Any One-Time Password we send
+                                                  is valid for 10 minutes from
+                                                  the time you request it.</span
+                                                >
+                                              </li>
+                                              <li>
+                                                <span
+                                                  class="text-std"
+                                                  ng-transclude=""
+                                                  translate="AUTHENTICATION_PANEL_TROUBLESHOOTING_LOGIN_TEXT4"
+                                                  >For International mobile
+                                                  numbers, the One–Time Password
+                                                  will always come through as a
+                                                  SMS text message.</span
+                                                >
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                        <!-- end ngIf: !isPaymentSca --><!-- ngIf: !isPaymentSca -->
+                                        <div
+                                          class="row ng-scope"
+                                          ng-if="!isPaymentSca"
+                                        >
+                                          <div class="col-xs-12">
+                                            <p
+                                              class="text-std"
+                                              ng-transclude=""
+                                              paragraph=""
+                                              translate="AUTHENTICATION_PANEL_OTP_ISSUES"
+                                            >
+                                              If after trying again you're still
+                                              having issues then call us on 0345
+                                              835 3844 (or +44 203 284 1577 if
+                                              you're abroad) and we will help
+                                              you out.
+                                            </p>
+                                          </div>
+                                        </div>
+                                        <!-- end ngIf: !isPaymentSca --><!-- ngIf: isPaymentSca --></ng-form
+                                      >
+                                    </div>
+                                  </div>
+                                  <!-- ngIf: exceptionLiteral && exceptionLiteral != 'isValid' --><!-- ngIf: displayedError && !FTLerror -->
+                                </div>
+                                <!-- end ngIf: templateName === 'otp' -->
+                              </div></sca-enrollment-otp-panel
+                            >
+                            <div class="ng-isolate-scope">
+                              <div class="clearfix"></div>
+                              <hr />
+                            </div>
+                            <div class="row md-margin-top">
+                              <div class="col-xs-12 col-sm-6">
+                                <a
+                                  class="pull-left mr-10 link-std ng-isolate-scope"
+                                  ng-href=""
+                                  ng-transclude=""
+                                  ng-click="previousStep()"
+                                  ><span
+                                    class="icon-cancel"
+                                    icon="cancel"
+                                  ></span
+                                  ><span
+                                    class="text-std"
+                                    ng-transclude=""
+                                    translate="RETAIL_CREDENTIALS_PUBLIC_COMMON_CANCEL"
+                                    >Cancel</span
+                                  ></a
+                                >
+                              </div>
+                              <!-- <div class="col-xs-12 col-md-6 text-right">
+                                  ng-click="checkValidation()"
+                                  ng-mouseover="biocatchFlush()"
+                                  class="pull-right btn md-btn ng-scope ng-isolate-scope"
+                                  ng-transclude=""
+                                  is-invalid="invalidAuthentication(err)"
+                                  is-valid="userAuthenticated(data)"
+                                  ng-disabled="!signatureForm.$valid || continueButton || 
+                            signatureForm.authenticationPanelTelephoneForm || otpComplete"
+                                  ng-if="!continueButton &amp;&amp; !signatureForm.authenticationPanelTelephoneForm"
+                                  disabled="disabled"
+                                >
+                                  <span
+                                    class="text-std"
+                                    ng-transclude=""
+                                    translate="RETAIL_CREDENTIALS_PUBLIC_COMMON_CONTINUE"
+                                    >Continue</span
+                                  ></button
+                              </div> -->
+                              <div class="col-xs-12 col-md-6 text-right">
+                                <!-- ngIf: !continueButton && !signatureForm.authenticationPanelTelephoneForm --><button
+                                  ng-click="checkValidation()"
+                                  ng-mouseover="biocatchFlush()"
+                                  class="pull-right btn md-btn ng-scope ng-isolate-scope"
+                                  ng-transclude=""
+                                  is-invalid="invalidAuthentication(err)"
+                                  is-valid="userAuthenticated(data)"
+                                  ng-disabled="!signatureForm.$valid || continueButton || 
+                            signatureForm.authenticationPanelTelephoneForm || otpComplete"
+                                  ng-if="!continueButton &amp;&amp; !signatureForm.authenticationPanelTelephoneForm"
+                                >
+                                  <span
+                                    class="text-std"
+                                    ng-transclude=""
+                                    translate="RETAIL_CREDENTIALS_PUBLIC_COMMON_CONTINUE"
+                                    >Continue</span
+                                  ></button
+                                ><!-- end ngIf: !continueButton && !signatureForm.authenticationPanelTelephoneForm -->
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+
+                    <script src="/spasR52/credentialsPublic/vendor/174b2833.scripts.vendor.min.js"></script>
+                    <script src="/spasR52/credentialsPublic/scripts/97334f2c.tsb-credentials-public.min.js"></script>
+
+                    <script>
+                      var element =
+                        document.getElementById("credentialsPublic");
+                      angular.bootstrap(element, ["credentialsPublic"]);
+                    </script>
+                  </div>
+                </div>
+
+                <div class="promotionalDefault" style="min-height: 4px"></div>
+              </div>
+
+              <div id="lateralPanel">
+                <div
+                  class="secondary col-md-4 col-xs-12"
+                  id="existingLP"
+                  style="display: block"
+                >
+                  <input type="hidden" id="testingInput" data-p="null" />
+                  <script>
+                    if (typeof contentNotLoaded === "undefined") {
+                      var contentNotLoaded = true;
+                    }
+                  </script>
+
+                  <div class="panel">
+                    <div id="lateral-panel-content-inbox"></div>
+                    <div id="lateral-panel-content-1">
+                      <div class="accordion">
+                        <div class="part">
+                          <h2
+                            class="trigger"
+                            title="Help and Support: Use this link to show or hide information"
+                          >
+                            <span class="trigger-text">Help and Support</span
+                            ><span class="icon-minus-outline pull-right"></span>
+                          </h2>
+                          <div class="pane open">
+                            <div class="paneInner">
+                              <div class="quickContact">
+                                <div class="row">
+                                  <!-- Asset details - id [1490892138236] - type [Content_C]-->
+                                  <div
+                                    class="col-sm-12 col-xs-12 content_basic"
+                                  >
+                                    <div class="article flex-col">
+                                      <div class="backgroundWhite row">
+                                        <div class="col-sm-12 text_banner">
+                                          <div>
+                                            <div>
+                                              <div>
+                                                <div>
+                                                  <div>
+                                                    <div>
+                                                      <div>
+                                                        <div>
+                                                          <div>
+                                                            <p>
+                                                              Having problems
+                                                              logging in? Try
+                                                              our&nbsp;<a
+                                                                href="https://www.tsb.co.uk/help-and-support/login-issues.html"
+                                                                target="_blank"
+                                                                >login trouble
+                                                                shooter</a
+                                                              >.
+                                                            </p>
+
+                                                            <p>
+                                                              Need help with
+                                                              anything else?
+                                                              <a
+                                                                href="https://www.tsb.co.uk/help-and-support.html"
+                                                                target="_blank"
+                                                                >Search our
+                                                                FAQs</a
+                                                              >.
+                                                            </p>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="promotionalDefault"
+                      style="min-height: 15px; padding-top: 15px"
+                    ></div>
+                    <div id="lateral-panel-content-2">
+                      <div class="accordion">
+                        <div class="part">
+                          <h2
+                            class="trigger"
+                            title="Want an easier way to log in?: Use this link to show or hide information"
+                          >
+                            <span class="trigger-text"
+                              >Want an easier way to log in?</span
+                            ><span class="icon-minus-outline pull-right"></span>
+                          </h2>
+                          <div class="pane open">
+                            <div class="paneInner">
+                              <div class="quickContact">
+                                <div class="row">
+                                  <!-- Asset details - id [1497144540220] - type [Content_C]-->
+                                  <div
+                                    class="col-sm-12 col-xs-12 content_basic"
+                                  >
+                                    <div class="article flex-col">
+                                      <div class="backgroundWhite row">
+                                        <div class="col-sm-12 text_banner">
+                                          <div>
+                                            <div>
+                                              With the app, you can log in
+                                              securely with your fingerprint or
+                                              face&nbsp;for fast access to your
+                                              account.
+                                            </div>
+
+                                            <div>&nbsp;</div>
+
+                                            <div>
+                                              <a
+                                                class="btn btn-secondary pull-right"
+                                                href="https://www.tsb.co.uk/help-and-support/mobile-banking.html"
+                                                target="_blank"
+                                                title="Get the app"
+                                                >Get the app</a
+                                              >
+                                            </div>
+
+                                            <div>&nbsp;</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="promotionalDefault"
+                      style="min-height: 15px; padding-top: 15px"
+                    ></div>
+                    <div id="lateral-panel-content-3"></div>
+                    <div id="lateral-panel-content-4"></div>
+                    <div id="lateral-panel-content-5"></div>
+                    <div id="lateral-panel-content-6"></div>
+                    <div id="lateral-panel-content-7"></div>
+                    <div id="lateral-panel-content-8"></div>
+                    <div id="lateral-panel-content-9"></div>
+                    <div id="lateral-panel-content-10"></div>
+                  </div>
+                </div>
+
+                <div
+                  class="secondary col-md-4 col-xs-12"
+                  id="newPublicLP"
+                  style="display: none"
+                >
+                  <input type="hidden" id="testingInput" data-p="null" />
+                  <script>
+                    if (typeof contentNotLoaded === "undefined") {
+                      var contentNotLoaded = true;
+                    }
+                  </script>
+
+                  <div id="lateral-panel-content-publicLP-1"></div>
+                  <div id="lateral-panel-content-publicLP-2"></div>
+                  <div id="lateral-panel-content-publicLP-3"></div>
+                  <div id="lateral-panel-content-publicLP-4"></div>
+                  <div id="lateral-panel-content-publicLP-5"></div>
+                  <div id="lateral-panel-content-publicLP-6"></div>
+                  <div id="lateral-panel-content-publicLP-7"></div>
+                  <div id="lateral-panel-content-publicLP-8"></div>
+                  <div id="lateral-panel-content-publicLP-9"></div>
+                  <div id="lateral-panel-content-publicLP-10"></div>
+                </div>
+
+                <div
+                  class="secondary col-md-4 col-xs-12"
+                  id="newPrivateLP"
+                  style="display: none"
+                >
+                  <input type="hidden" id="testingInput" data-p="null" />
+                  <script>
+                    if (typeof contentNotLoaded === "undefined") {
+                      var contentNotLoaded = true;
+                    }
+                  </script>
+
+                  <div id="lateral-panel-content-privateLP-1"></div>
+                  <div id="lateral-panel-content-privateLP-2"></div>
+                  <div id="lateral-panel-content-privateLP-3"></div>
+                  <div id="lateral-panel-content-privateLP-4"></div>
+                  <div id="lateral-panel-content-privateLP-5"></div>
+                  <div id="lateral-panel-content-privateLP-6"></div>
+                  <div id="lateral-panel-content-privateLP-7"></div>
+                  <div id="lateral-panel-content-privateLP-8"></div>
+                  <div id="lateral-panel-content-privateLP-9"></div>
+                  <div id="lateral-panel-content-privateLP-10"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="spaHidden" style="display: none"></div>
+      <div
+        id="experienceatfoot"
+        class="col-md-12"
+        style="z-index: 100; margin-bottom: 2px"
+      ></div>
+
+      <div class="footer-tsb">
+        <div class="container">
+          <div class="outer">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="footerInner-tsb">
+                  <ul>
+                    <li>
+                      <a
+                        href="http://www.tsb.co.uk/legal/"
+                        target="_blank"
+                        id="lp-legal"
+                        title="Legal"
+                        class=""
+                        >Legal</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="http://www.tsb.co.uk/privacy/"
+                        target="_blank"
+                        id="lp-privacy"
+                        title="Privacy"
+                        class=""
+                        >Privacy</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="http://www.tsb.co.uk/security/"
+                        target="_blank"
+                        id="lp-security"
+                        title="Security"
+                        class=""
+                        >Security</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.tsb.co.uk/help-and-support/rates-and-charges.html"
+                        target="_blank"
+                        id="lp-rates-and-charges"
+                        title="Rates and Charges"
+                        class=""
+                        >Rates and Charges</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cms-backdrop" class="inactive"></div>
+  </body>
+</html>

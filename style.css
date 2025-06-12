@@ -1,0 +1,25 @@
+#bs-example-navbar-collapse-1 > div > ul > ul > li:nth-child(2) > span {
+  top: 5px !important;
+}
+
+#__tealiumGDPRecModal {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  #wrapperDefault > div.container {
+    max-height: 94px;
+  }
+}
+
+@media (min-width: 992px) {
+  #credentialsPublic
+    > div.row.ng-scope
+    > div.col-xs-12
+    > form
+    > div.row.ng-scope
+    > div.input-group.adjustMI
+    > div {
+    width: 50%;
+  }
+}

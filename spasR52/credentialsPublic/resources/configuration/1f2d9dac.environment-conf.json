@@ -1,0 +1,310 @@
+{
+  "REST_CONFIG": {
+    "BaseUrl": "/api",
+    "RequestSuffix": "",
+    "FullResponse": true
+  },
+  "APP_CONFIG": {
+    "Channel": "web",
+    "Procedence": "WR01",
+    "APP_ID": "credentialsPublic",
+    "SHOW_NOTIFICATIONS": true,
+    "ProcedenceForced": true
+  },
+  "CACHE_CONFIG": {
+    "operations": {}
+  },
+  "VERSION_CONFIG": {
+    "proteo4": "1.0.5-14",
+    "application": "0.0.1",
+    "Components": [
+      {
+        "Name": "proteo.invocation-service",
+        "Version": "1.4.0-20180823143410"
+      },
+      {
+        "Name": "proteo.tracking-id",
+        "Version": "1.1.0-4"
+      },
+      {
+        "Name": "tsb-log",
+        "Version": "1.0.1-16"
+      },
+      {
+        "Name": "tsb-audit",
+        "Version": "2.0.0-19"
+      },
+      {
+        "Name": "tsb-authorization",
+        "Version": "1.19.0-20170320185912"
+      },
+      {
+        "Name": "appverse-web-html5-core",
+        "Version": "2.0.0"
+      },
+      {
+        "Name": "ui-select",
+        "Version": "0.12.1"
+      },
+      {
+        "Name": "angular-resource",
+        "Version": "1.4.14"
+      },
+      {
+        "Name": "angular-filter",
+        "Version": "0.5.17"
+      },
+      {
+        "Name": "angular-ripple",
+        "Version": "0.0.0"
+      },
+      {
+        "Name": "selectize",
+        "Version": "0.12.6"
+      },
+      {
+        "Name": "angular-sanitize",
+        "Version": "1.4.14"
+      },
+      {
+        "Name": "angular-bootstrap",
+        "Version": "1.3.3"
+      },
+      {
+        "Name": "angular-translate-handler-log",
+        "Version": "1.1.0"
+      },
+      {
+        "Name": "angular-i18n",
+        "Version": "1.4.8"
+      },
+      {
+        "Name": "jquery",
+        "Version": "2.2.4"
+      },
+      {
+        "Name": "tsb-global-error-page",
+        "Version": "1.8.0-20220217135852"
+      },
+      {
+        "Name": "tsb-proteo-ui-global-error-page",
+        "Version": "0.14.0-20220210061047"
+      },
+      {
+        "Name": "tsb-proteo-canal-invoker",
+        "Version": "0.39.0-20220127121114"
+      },
+      {
+        "Name": "tsb-proteo-dynamic-states",
+        "Version": "0.20.0-20210921041732"
+      },
+      {
+        "Name": "tsb-proteo-print",
+        "Version": "1.3.0-20211004145934"
+      },
+      {
+        "Name": "tsb-proteo-ui-compound-input-sortcode",
+        "Version": "0.19.0-20220209212910"
+      },
+      {
+        "Name": "tsb-proteo-ui-compound-input-account",
+        "Version": "0.15.0-20220209201834"
+      },
+      {
+        "Name": "tsb-proteo-ui-basics",
+        "Version": "0.43.0-20220209062254"
+      },
+      {
+        "Name": "tsb-proteo-ui-collapse",
+        "Version": "1.2.0-20220209184613"
+      },
+      {
+        "Name": "tsb-proteo-ui-date-picker",
+        "Version": "0.32.0-20220209211522"
+      },
+      {
+        "Name": "tsb-proteo-ui-popover",
+        "Version": "0.9.0-20220209144425"
+      },
+      {
+        "Name": "tsb-proteo-ui-wizard-states",
+        "Version": "0.18.0-20220210102508"
+      },
+      {
+        "Name": "tsb-proteo-md16-webapplications-jsm-external-spa",
+        "Version": "0.14.0-20220321173138"
+      },
+      {
+        "Name": "tsb-get-external-link",
+        "Version": "2.1.0-20220608113105"
+      },
+      {
+        "Name": "tsb-journal-util",
+        "Version": "2.0.0-20200423130526"
+      },
+      {
+        "Name": "tsb-proteo-ui-address-finder",
+        "Version": "0.29.0-20220210061209"
+      },
+      {
+        "Name": "tsb-webchannel-bootstrap-sass-theme",
+        "Version": "1.7.0-20210522194818"
+      },
+      {
+        "Name": "tsb-proteo-ui-marketing-area",
+        "Version": "0.7.0-20220209192300"
+      },
+      {
+        "Name": "tsb-proteo-generic-functions",
+        "Version": "0.22.0-20220203062127"
+      },
+      {
+        "Name": "tsb-proteo-consultive",
+        "Version": "0.12.0-20210531155025"
+      },
+      {
+        "Name": "tsb-proteo-ui-signature-panel",
+        "Version": "1.17.0-20221112040555"
+      },
+      {
+        "Name": "tsb-proteo-ui-authentication-panel",
+        "Version": "1.10.0-20220308125458"
+      },
+      {
+        "Name": "tsb-proteo-ui-authentication-panel-telephone",
+        "Version": "2.1.0-20231004184950"
+      },
+      {
+        "Name": "tsb-proteo-ui-modal",
+        "Version": "0.12.0-20220209161505"
+      },
+      {
+        "Name": "fingerprintjs2",
+        "Version": "2.1.0"
+      },
+      {
+        "Name": "tsb-proteo-ui-captcha",
+        "Version": "1.2.0-20220210125356"
+      }
+    ]
+  },
+  "AUDIT_CONFIG": {
+    "AuditEndPoint": "/api/loggingserver-v0/add/Channel/AuditMessage",
+    "AuditNavigationStart": true,
+    "AuditNavigationError": true,
+    "AuditNavigationEnd": true,
+    "AuditServiceStart": true,
+    "AuditServiceError": true,
+    "AuditServiceEnd": true
+  },
+  "TSB_LOGGING_CONFIG": {
+    "ServerEnabled": false,
+    "LogServerEndpoint": "/api/loggingserver-v0/add/Channel/LogMessage",
+    "CustomLogPreffix": "APPLOG",
+    "EnabledLogLevel": true,
+    "EnabledErrorLevel": true,
+    "EnabledDebugLevel": true,
+    "EnabledWarnLevel": true,
+    "EnabledInfoLevel": true,
+    "LogDateTimeFormat": "%Y-%M-%d %h:%m:%s:%z",
+    "LogTextFormat": "'"
+  },
+  "I18N_CONFIG": {
+    "localeLocationPattern": "spas/credentialsPublic/resources/i18n/angular/angular-locale_{{locale}}.js",
+    "PreferredLocale": "en-GB",
+    "acceptHtml": true
+  },
+  "AUTHORIZATION_CONFIG": {
+    "TemplateUrl": "components/authorization/authorization-modal-template.html"
+  },
+  "SERVICE_INVOCATION_CONFIG": {
+    "404": {
+      "resolve_promise": false,
+      "status_message": "PAGE_NOT_FOUND"
+    },
+    "500": {
+      "resolve_promise": false,
+      "status_message": "SERVER_ERROR"
+    }
+  },
+  "SIGNATURE_PANEL_WEBADAPTER": {
+    "getAuthenticationType": "/signaturewebadapter-v2/getSignatureType",
+    "getPasswordAuthentication": "/signaturewebadapter-v2/validateSignature"
+  },
+  "SIGNTATURE_WEBADAPTER": {
+    "getPhones": "/signaturewebadapter-v2/getPhones"
+  },
+  "CREDENTIALSWEBADAPTER": {},
+  "CREDENTIALS_WEBADAPTER": {
+    "getUserDetails": "/credentialswebadapter-v2/getUserDetails"
+  },
+  "LOGIN_WEBADAPTER": {
+    "login": "/loginwebadapter-v1/login",
+    "validateUser": "/loginwebadapter-v1/validateUser",
+    "validatePasswordAndMemorable": "/loginwebadapter-v1/validatePasswordAndMemorable",
+    "validatePassword": "/loginwebadapter-v1/validatePassword",
+    "validatePasswordAndOtp": "/loginwebadapter-v1/validatePasswordAndOtp",
+    "checkMemorableInformation": "/loginwebadapter-v1/checkMemorableInformation",
+    "checkMemorableInformationAndPassword": "/loginwebadapter-v1/checkMemorableInformationAndPassword",
+    "setMemorableInformation": "/loginwebadapter-v1/setFullMemorable",
+    "setMemorableInformationSca": "/loginwebadapter-v1/setFullMemorableSca",
+    "changeFirstPassword": "/loginwebadapter-v1/setNewPassword",
+    "changeFirstPasswordSca": "/loginwebadapter-v1/setNewPasswordSca",
+    "validateActivationCode": "/loginwebadapter-v1/validateActivationCode",
+    "validateActivationCodeSca": "/loginwebadapter-v1/validateActivationCodeSca",
+    "generateActivationCode": "/loginwebadapter-v1/generateActivationCode",
+    "enrollmentProcess": "/loginwebadapter-v1/validateEnrollmentIdCookies",
+    "generateOtp": "/loginwebadapter-v1/generateOTP",
+    "validateOtp": "/loginwebadapter-v1/validateOTP",
+    "getPhonesLogin": "/loginwebadapter-v1/getPhones",
+    "getAllQuestions": "/loginwebadapter-v1/getAllQuestions",
+    "getQuestions": "/loginwebadapter-v1/getValidateQuestions",
+    "validateQuestions": "/loginwebadapter-v1/validateQuestions",
+    "getUserQuestions": "/loginwebadapter-v1/getUserQuestions",
+    "setUserQuestions": "/loginwebadapter-v1/setUserQuestions"
+  },
+  "CREDENTIALSPUBLIC_WEBADAPTER": {
+    "login": "/credentialspublicwebadapter-v2/login",
+    "checkMemorableInformation": "/credentialspublicwebadapter-v2/checkMemorableInformation",
+    "setMemorableInformation": "/credentialspublicwebadapter-v2/setFullMemorable",
+    "validateActivationCode": "/credentialspublicwebadapter-v2/otpValidation",
+    "setResetPhoneCall": "/credentialspublicwebadapter-v2/setResetPhoneCall",
+    "setRegistrationCustomerDetails": "/credentialspublicwebadapter-v2/setRegistrationCustomerDetails",
+    "setRegistrationLoginDetails": "/credentialspublicwebadapter-v2/setRegistrationLoginDetails",
+    "checkUserId": "/credentialspublicwebadapter-v2/checkUserId",
+    "getForgottenId": "/credentialspublicwebadapter-v2/forgotUserId",
+    "resetPassword": "/credentialspublicwebadapter-v2/setPassword",
+    "validateUser": "/credentialspublicwebadapter-v2/validateUserInformation",
+    "resetPasswordAndMI": "/credentialspublicwebadapter-v2/resetPasswordAndMI",
+    "getTelephones": "/credentialspublicwebadapter-v2/getCustomerPhoneList",
+    "checkResetPhoneCall": "/credentialspublicwebadapter-v2/checkResetPhoneCall",
+    "getCustomerPhoneList": "/credentialspublicwebadapter-v2/getCustomerPhoneList",
+    "changeFirstPassword": "/credentialspublicwebadapter-v2/setNewPassword",
+    "getUserQuestions": "credentialspublicwebadapter-v2/getUserQuestions",
+    "validateQuestions": "/credentialspublicwebadapter-v2/validateQuestions",
+    "authenticationUser": "/credentialspublicwebadapter-v2/authenticationUser",
+    "evaluateFraud": "/credentialspublicwebadapter-v2/evaluateFraud",
+    "deRegistration": "/credentialspublicwebadapter-v2/deRegistration"
+  },
+  "CONSULTIVE_WEBADAPTER": {
+    "validatePublicOperation": "/consultiveadapter-v1/validatePublicOperation"
+  },
+  "JOURNALSERVICE": [
+    "/loginwebadapter-v1",
+    "/credentialspublicwebadapter-v2",
+    "/signaturewebadapter-v2",
+    "/pilotwebadapter-v0",
+    "/consultiveadapter-v1"
+  ],
+  "G_API": "https://www.google.com/recaptcha/api.js",
+  "ENVIRONMENT_URL": {
+    "dev": "https://dev.uk.tsb/",
+    "int": "https://int.uk.tsb/",
+    "acc": "https://acc.uk.tsb/",
+    "default": "https://www.tsb.co.uk",
+    "prodbiz": "https://businessinternetbanking.tsb.co.uk/"
+  },
+  "PILOTSCA_WEBADAPTER": {
+    "checkUseSca": "/pilotwebadapter-v0/checkSca"
+  }
+}
